@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ==== Meta Tags ==== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- ==== Title Website ==== -->
+    <title>ToDoList App</title>
+
+
+    <!-- ==== Box Icon CDN ==== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Add Css Files ==== -->
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/fonts.css">
+    <link rel="stylesheet" href="assets/styles/grid.css">
+    <link rel="stylesheet" href="assets/scss/app.css">
+    <link rel="stylesheet" href="assets/styles/responsive.css">
+</head>
+
+<body>
+
+
+    <!-- ==== Start ==== -->
+    <section class="todo">
+        <div class="container">
+            <h1 class="todo__title">Your ToDo List :)</h1>
+
+            <form action="#" class="form">
+                <div class="form__box">
+                    <input type="text" class="form__input">
+                    <i class='bx bx-plus form__icon'></i>
+                </div>
+                <select id="todo" class="form__select">
+                    <option class="form__option" value="all">All</option>
+                    <option class="form__option" value="completed">Completed</option>
+                    <option class="form__option" value="uncompleted">UnCompleted</option>
+                </select>
+            </form>
+
+            <div class="todo__items"></div>
+        </div>
+    </section>
+    <!-- ==== Finish ==== -->
+
+
+    <!-- ==== Add Js File ==== -->
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>

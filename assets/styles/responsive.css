@@ -1,0 +1,38 @@
+/* ==== Custom Media Queries ==== */
+@media screen and (max-width: 340px) {
+    .form__box {
+        flex-basis: 50%;
+    }
+
+    .form__select {
+        flex-basis: 35%;
+    }
+}
+
+/* ==== Custom Media Queries ==== */
+
+
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {
+
+    .form,
+    .todo__box {
+        width: 65rem;
+        margin: auto;
+    }
+
+    .todo__box {
+        margin: auto auto 1rem auto;
+    }
+
+    .todo__title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1400px) {}

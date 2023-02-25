@@ -1,0 +1,167 @@
+// ==== Variables ====
+$text-color: #18181b;
+$primary-color: #7e22ce;
+$secondary-color: #c084fc;
+$white-color: #ffffff;
+
+
+// ==== Configuration ====
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    // 62.5% ==> 10px
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    line-height: 1.6;
+    font-size: 1.6rem;
+    font-family: "Poppins-Regular";
+}
+
+
+// ==== Reset ====
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+input {
+    outline: none;
+    border: none;
+    font-family: "Poppins-Regular";
+}
+
+
+// ==== Start ====
+.todo {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.todo__title {
+    color: $text-color;
+    font-family: "Poppins-Bold";
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.form {
+    height: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.form__box {
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.form__input {
+    width: 100%;
+    padding-right: 3.5rem;
+    border: .2rem solid $text-color;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    height: 100%;
+}
+
+.form__input:focus,
+.form__select:focus {
+    border: .2rem solid $primary-color;
+    outline: none;
+}
+
+.form__icon {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    right: .75rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    font-size: 2.5rem;
+    cursor: pointer;
+    background-color: $primary-color;
+    color: $white-color;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__select {
+    background-color: transparent;
+    border: .2rem solid $text-color;
+    border-radius: 1rem;
+    appearance: none;
+    padding: 1rem;
+}
+
+.todo__items {
+    margin-top: 2rem;
+}
+
+.todo__box {
+    background-color: $secondary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+    transition: .4s;
+}
+
+.todo__text {
+    color: $white-color;
+    font-size: 1.8rem;
+    font-family: "Poppins-Bold";
+    transition: .4s;
+}
+
+.todo__btns {
+    // background-color: red;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .todo__icon {
+        cursor: pointer;
+        color: $primary-color;
+        font-size: 2rem;
+
+        &:nth-of-type(2) {
+            margin: 0 0 0 1rem;
+        }
+
+        &:last-child {
+            color: #dc2626;
+        }
+    }
+}
+
+.checked {
+    opacity: .6;
+    >.todo__text {
+        text-decoration: line-through;
+    }
+}
+
+// ==== Finish ====
