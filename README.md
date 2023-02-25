@@ -2,7 +2,7 @@
 
 ![viewfinal](https://raw.githubusercontent.com/Amirreza-Rashvand-Developer/Todo-List-With-Js/main/preview.jpg)
 
-- [Demo Project](https://amirreza-rashvand-developer.github.io/Counter/)
+- [Demo Project](https://amirreza-rashvand-developer.github.io/Todo-List-With-Js/)
 
 - Developed by amirreza rashvand
 
